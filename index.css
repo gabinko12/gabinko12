@@ -17,7 +17,10 @@ html{
 }
 nav{
     position: fixed;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     top: 0;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -42,6 +45,10 @@ nav a{
     padding: 7px 10px;
     border: 1px solid transparent;
     border-radius: 3px;
+    background: #2f3540;
+}
+nav a:hover{
+    background: none;
 }
 nav ul::before{
     content: "";
@@ -94,8 +101,21 @@ a:active,a:hover{
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-
-/* Media queories */
+/* SUBMENUS */
+.koncerti{
+    display: none;
+}
+nav ul li:hover .koncerti{
+    display: block;
+    position: absolute;
+    background-color: #3498db;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+nav ul li:hover .koncerti ul{
+    display: block;
+    margin: 10px;
+}
 
 /* Section setup */
 
@@ -110,7 +130,18 @@ section{
     height: 100vh;
 }
 
-@media all and (max-width: 1044px) {
+/* Media queories */
+
+@media all and (max-width: 1059px) {
+    nav{
+        height: 170px;
+    }
+    nav ul li:hover .koncerti{
+        bottom: -100px;
+        left: 23%;
+    }
+}
+@media all and (max-width: 840px) {
     .hamburger-icon{
         position: fixed;
         display: block;
@@ -144,7 +175,7 @@ section{
         color: #3498db;
     }
     nav ul.show{
-        left: 0;
+        left: -45px;
     }
     nav ul::before{
         display: none;
