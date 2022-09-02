@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+/* Setting up navbar */
+header{
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100px;
+}
+nav ul{
+    list-style: none;
+    margin-right: 40px;
+    z-index: 1;
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+nav ul::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: aqua;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+nav ul:hover::before,
+nav ul:focus::before{
+    transform: scaleX(1);
+}
+
+a:active,a:hover{
+    border: 1px solid whitesmoke;
+    transition: .5s;
+}
+
+/* Hamburger icon setup */
+
+.hamburger-icon{
+    display: none;
+    z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Media queories */
+
+@media all and (max-width: 960px) {
+    .hamburger-icon{
+        position: absolute;
+        display: block;
+        top: 20px;
+        left: 50px;
+        cursor: pointer;
+    }
+    nav{
+        background: none;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -200%;
+        background: #2f3540;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a:active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    nav ul::before{
+        display: none;
+    }
+  }

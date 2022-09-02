@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hamburger-icon").click(function(){
+                $("ul").toggleClass("show");
+            })
+        })
+    </script>
+    <title>PO JOSIP KAŠMAN</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger-icon" id="hamburger-icon" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
+                <li><a href="#povijest">POVIJEST ORKESTRA</a></li>
+                <li><a href="#koncerti">KONCERTI</a></li>
+                <li><a href="#događanja">DOGAĐANJA</a></li>
+                <li><a href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
+                <li><a href="#o-nama">O NAMA</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <script src="change.js"></script>
+</body>
+</html>
