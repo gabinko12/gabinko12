@@ -13,6 +13,12 @@
                 $("ul").toggleClass("show");
             })
         })
+        $(document).ready(function(){
+            $("#links").click(function(){
+                $("ul").removeClass("show");
+                $("#hamburger-icon").toggleClass("change");
+            })
+        })
     </script>
     <title>PO JOSIP KAŠMAN</title>
 </head>
@@ -24,8 +30,8 @@
             <div class="bar3"></div>
         </div>
 
-        <nav class="navbar">
-            <ul>
+        <nav class="navbar" id="navbar">
+            <ul id="links">
                 <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
                 <li><a href="#povijest">POVIJEST ORKESTRA</a></li>
                 <li><a href="#koncerti">KONCERTI</a></li>
