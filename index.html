@@ -14,15 +14,23 @@
             for( var i = 0; i< arrayOfLinks.length; i++){
                 var link = arrayOfLinks[i]
                 link.addEventListener("click", (e)=>{
-                    var navbarMenu = document.querySelector(".navbar ul")
-                    navbarMenu.classList.remove("show")
-                    hamburgerIcon.classList.toggle("change")
-
+                    var navbarMenu = document.querySelector(".navbar ul");
+                    navbarMenu.classList.remove("show");
+                    hamburgerIcon.classList.toggle("change");
 
                 })
             }
         })
-
+        
+        $(document).ready(function(){
+            $("#hamburger-icon").click(function(){
+                $("ul").toggleClass("show"); 
+            })
+           /* $("#link").click(function(){
+                $("ul").removeClass("show");
+                $("#hamburger-icon").toggleClass("change");
+            })*/
+        })
 
     </script>
     <title>PO JOSIP KAŠMAN</title>
@@ -71,6 +79,9 @@
         </section>
         <section id="nautički">
             <h2>NAUTIČKI</h2>
+        </section>
+        <section id="flig">
+            <h2>FLIG FESTIVAL</h2>
         </section>
         <section id="kontaktiraj-nas">
             <h2>KONTAKTIRAJ NAS</h2>
