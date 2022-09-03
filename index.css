@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Inconsolata', monospace;
 }
 html{
     scroll-behavior: smooth;
@@ -36,12 +36,12 @@ nav li{
     display: inline-block;
     margin: 0 8px;
     line-height: 80px;
+    position: relative;
 }
 nav a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 18px;
     padding: 7px 10px;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -102,20 +102,72 @@ a:active,a:hover{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 /* SUBMENUS */
-.koncerti{
-    display: none;
-}
-nav ul li:hover .koncerti{
-    display: block;
+
+nav  li .koncerti{
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+    width: 250px;
     position: absolute;
+    left: 0;
     background-color: #3498db;
-    border: 1px solid white;
-    border-radius: 20px;
+    font-size: 13px;
+    border-top: 1px solid whitesmoke;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
 }
-nav ul li:hover .koncerti ul{
-    display: block;
-    margin: 10px;
+nav  li:hover .koncerti{
+    transform: translateY(3px);
+    opacity: 1;
+    visibility: visible;
 }
+nav  li .događanja{
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+    width: 250px;
+    position: absolute;
+    left: 0;
+    background-color: #3498db;
+    font-size: 13px;
+    border-top: 1px solid whitesmoke;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+}
+nav  li:hover .događanja{
+    transform: translateY(3px);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Plus icon 
+
+nav ul li  .plus{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    margin-left: 5px;
+}
+nav ul li .plus::before,
+nav ul li .plus::after{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    background-color: #000000;
+    height: 2px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s ease;
+}
+nav ul li .plus::after{
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+nav ul li .plus:hover::after{
+    transform: translate(-50%,-50%) rotate(0deg);
+}*/
 
 /* Section setup */
 
@@ -132,13 +184,12 @@ section{
 
 /* Media queories */
 
-@media all and (max-width: 1059px) {
+@media all and (max-width: 860px) {
     nav{
         height: 170px;
     }
     nav ul li:hover .koncerti{
-        bottom: -100px;
-        left: 23%;
+        top: 150px;
     }
 }
 @media all and (max-width: 840px) {
@@ -154,9 +205,9 @@ section{
     }
     nav ul{
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 80px;
+        width: 60%;
+        height: auto;
+        top: 190px;
         left: -200%;
         background: #2f3540;
         text-align: center;
@@ -179,6 +230,40 @@ section{
     }
     nav ul::before{
         display: none;
+    }
+    nav li  .koncerti{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 270px;
+        position: absolute;
+        background-color: #3498db;
+        font-size: 13px;
+        transform: translateY(0px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 500ms ease-in-out;
+        border: none;
+    }
+    nav li:hover .koncerti{
+        transform: translateY(-550px);
+        opacity: 1;
+        visibility: visible;
+    }
+    nav  li .događanja{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 270px;
+        position: absolute;
+        background-color: #3498db;
+        font-size: 13px;
+        transform: translateY(0px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 500ms ease-in-out;
+        border: none;
+    }
+    nav  li:hover .događanja{
+        transform: translateY(-300px);
+        opacity: 1;
+        visibility: visible;
     }
   }
 
