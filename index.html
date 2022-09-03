@@ -14,7 +14,7 @@
             })
         })
         $(document).ready(function(){
-            $("#links").click(function(){
+            $("#link").click(function(){
                 $("ul").removeClass("show");
                 $("#hamburger-icon").toggleClass("change");
             })
@@ -31,25 +31,25 @@
         </div>
 
         <nav class="navbar" id="navbar">
-            <ul id="links">
-                <li><a href="#home"><i class="material-icons">home</i>HOME</a></li>
-                <li><a href="#povijest">POVIJEST ORKESTRA</a></li>
-                <li><a href="#koncerti">KONCERTI<i class="plus"></i></a>
+            <ul>
+                <li><a id="link" href="#home"><i class="material-icons">home</i>HOME</a></li>
+                <li><a id="link" href="#povijest">POVIJEST ORKESTRA</a></li>
+                <li><a id="link" href="#koncerti">KONCERTI<i class="plus"></i></a>
                     <div class="koncerti">
                         <ul>
-                            <li><a href="#božić">BOŽIĆNO NOVOGODIŠNJI</a></li>
-                            <li><a href="#uskrs">USKRSNI</a></li>
-                            <li><a href="#nautički">NAUTIČKI</a></li>
+                            <li><a id="link" href="#božić">BOŽIĆNO NOVOGODIŠNJI</a></li>
+                            <li><a id="link" href="#uskrs">USKRSNI</a></li>
+                            <li><a id="link" href="#nautički">NAUTIČKI</a></li>
                         </ul>
                     </div></li>
-                <li><a href="#događanja">DOGAĐANJA</a>
+                <li><a id="link" href="#događanja">DOGAĐANJA</a>
                     <div class="događanja">
                         <ul>
-                            <li><a href="#flig">FLIG FESTIVAL</a></li>
+                            <li><a id="link" href="#flig">FLIG FESTIVAL</a></li>
                         </ul>
                     </div></li>
-                <li><a href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
-                <li><a href="#o-nama">O NAMA</a></li>
+                <li><a id="link" href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
+                <li><a id="link" href="#o-nama">O NAMA</a></li>
             </ul>
         </nav>
         <section id="home">
