@@ -219,8 +219,7 @@ section{
         display: block;
         margin: 50px 0;
         line-height: 30px;
-        text-align: center;
-        width: 200px;
+        text-align: start;
     }
     nav a{
         font-size: 20px;
@@ -280,6 +279,7 @@ section{
     }
     nav  li:hover .događanja{
         transform: translate(600px,-270px);
+        width: 200px;
         opacity: 1;
         visibility: visible;
         padding: 20px;
