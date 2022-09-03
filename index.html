@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#hamburger-icon").click(function(){
-                $("ul").toggleClass("show");
-            })
+        document.addEventListener("DOMContentLoaded", function(){
+            const arrayOfLinks = document.querySelectorAll(".nav_link");
+            const hamburgerIcon = document.getElementById("hamburger-icon");
+            for( var i = 0; i< arrayOfLinks.length; i++){
+                var link = arrayOfLinks[i]
+                link.addEventListener("click", (e)=>{
+                    var navbarMenu = document.querySelector(".navbar ul")
+                    navbarMenu.classList.remove("show")
+                    hamburgerIcon.classList.toggle("change")
+
+
+                })
+            }
         })
-        $(document).ready(function(){
-            $("#link").click(function(){
-                $("ul").removeClass("show");
-                $("#hamburger-icon").toggleClass("change");
-            })
-        })
+
+
     </script>
     <title>PO JOSIP KAŠMAN</title>
 </head>
@@ -32,9 +37,9 @@
 
         <nav class="navbar" id="navbar">
             <ul>
-                <li><a id="link" href="#home"><i class="material-icons">home</i>HOME</a></li>
-                <li><a id="link" href="#povijest">POVIJEST ORKESTRA</a></li>
-                <li><a id="link" href="#koncerti">KONCERTI<i class="plus"></i></a>
+                <li><a class="nav_link" id="link" href="#home"><i class="material-icons">home</i>HOME</a></li>
+                <li><a class="nav_link" id="link" href="#povijest">POVIJEST ORKESTRA</a></li>
+                <li><a class="nav_link" id="link" href="#koncerti">KONCERTI<i class="plus"></i></a>
                     <div class="koncerti">
                         <ul>
                             <li><a id="link" href="#božić">BOŽIĆNO NOVOGODIŠNJI</a></li>
@@ -42,14 +47,14 @@
                             <li><a id="link" href="#nautički">NAUTIČKI</a></li>
                         </ul>
                     </div></li>
-                <li><a id="link" href="#događanja">DOGAĐANJA</a>
+                <li><a class="nav_link" id="link" href="#događanja">DOGAĐANJA</a>
                     <div class="događanja">
                         <ul>
-                            <li><a id="link" href="#flig">FLIG FESTIVAL</a></li>
+                            <li><a class="nav_link" id="link" href="#flig">FLIG FESTIVAL</a></li>
                         </ul>
                     </div></li>
-                <li><a id="link" href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
-                <li><a id="link" href="#o-nama">O NAMA</a></li>
+                <li><a class="nav_link" id="link" href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
+                <li><a class="nav_link" id="link" href="#o-nama">O NAMA</a></li>
             </ul>
         </nav>
         <section id="home">
