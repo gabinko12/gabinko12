@@ -63,7 +63,7 @@ nav ul::before{
     transform: scaleX(0);
 }
 nav ul:hover::before,
-nav ul:focus::before{
+nav ul:hover::before{
     transform: scaleX(1);
 }
 
@@ -236,7 +236,7 @@ section{
     }
     nav li  .koncerti{
         box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
-        width: 270px;
+        width: 70%;
         position: absolute;
         background-color: #3498db;
         font-size: 13px;
@@ -245,9 +245,11 @@ section{
         visibility: hidden;
         transition: all 500ms ease-in-out;
         border: none;
+        text-align: center;
+        justify-content: center;
     }
     nav li .koncerti li{
-        text-align: center;
+        text-align: start;
     }
     nav li:hover .koncerti{
         transform: translate(300px,-500px);
@@ -256,7 +258,7 @@ section{
     }
     nav  li .događanja{
         box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
-        width: 270px;
+        width: 90%;
         position: absolute;
         background-color: #3498db;
         font-size: 13px;
@@ -267,10 +269,95 @@ section{
         border: none;
     }
     nav li .događanja li{
-        text-align: center;
+        text-align: start;
     }
     nav  li:hover .događanja{
-        transform: translate(300px,-270px);
+        transform: translate(250px,-270px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media all and (max-width: 400px) {
+    .hamburger-icon{
+        position: fixed;
+        display: block;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+    }
+    nav{
+        background: none;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        border: 1px solid whitesmoke;
+        height: auto;
+        top: 190px;
+        left: -200%;
+        background: #2f3540;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        text-align: start;
+        width: 200px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a:active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: -45px;
+    }
+    nav ul::before{
+        display: none;
+    }
+    nav li  .koncerti{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 70%;
+        position: absolute;
+        background-color: #3498db;
+        font-size: 13px;
+        transform: translate(300px, 0);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 500ms ease-in-out;
+        border: none;
+        text-align: center;
+        justify-content: center;
+    }
+    nav li .koncerti li{
+        text-align: start;
+    }
+    nav li:hover .koncerti{
+        transform: translate(235px,-500px);
+        opacity: 1;
+        visibility: visible;
+    }
+    nav  li .događanja{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 90%;
+        position: absolute;
+        background-color: #3498db;
+        font-size: 13px;
+        transform: translate(300px, 0);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 500ms ease-in-out;
+        border: none;
+    }
+    nav li .događanja li{
+        text-align: start;
+    }
+    nav  li:hover .događanja{
+        transform: translate(190px,-280px);
         opacity: 1;
         visibility: visible;
     }
