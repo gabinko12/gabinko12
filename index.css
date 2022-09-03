@@ -192,7 +192,7 @@ section{
         top: 150px;
     }
 }
-@media all and (min-width: 200px) {
+@media all and (max-width: 600px) {
     .hamburger-icon{
         position: fixed;
         display: block;
@@ -218,7 +218,8 @@ section{
         display: block;
         margin: 50px 0;
         line-height: 30px;
-        text-align: end;
+        text-align: start;
+        width: 200px;
     }
     nav a{
         font-size: 20px;
@@ -239,17 +240,17 @@ section{
         position: absolute;
         background-color: #3498db;
         font-size: 13px;
-        transform: translateY(0px);
+        transform: translate(300px, 0);
         opacity: 0;
         visibility: hidden;
         transition: all 500ms ease-in-out;
         border: none;
     }
-    nav li  .koncerti li{
+    nav li .koncerti li{
         text-align: center;
     }
     nav li:hover .koncerti{
-        transform: translateY(-550px);
+        transform: translate(300px,-500px);
         opacity: 1;
         visibility: visible;
     }
@@ -259,7 +260,7 @@ section{
         position: absolute;
         background-color: #3498db;
         font-size: 13px;
-        transform: translateY(0px);
+        transform: translate(300px, 0);
         opacity: 0;
         visibility: hidden;
         transition: all 500ms ease-in-out;
@@ -269,7 +270,7 @@ section{
         text-align: center;
     }
     nav  li:hover .događanja{
-        transform: translateY(-300px);
+        transform: translate(300px,-270px);
         opacity: 1;
         visibility: visible;
     }
