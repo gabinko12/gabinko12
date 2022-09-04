@@ -188,6 +188,7 @@ section{
 }
 section h1{
     font-size: 55px;
+    margin: 30px;
 }
 section p{
     max-width: 400px;
@@ -196,6 +197,7 @@ section p{
     color: white;
     padding: 20px;
     max-height: 520px;
+    margin: 30px;
 }
 .kontakt{
     border: 2px solid black;
@@ -377,6 +379,12 @@ section p{
     }
     .dogadanja-ul{
         cursor: default;
+    }
+    section h1{
+        font-size: 25px;
+    }
+    section p{
+        font-size: 13px;
     }
 }
 
