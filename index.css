@@ -266,5 +266,79 @@ section{
         cursor: default;
     }
 }
+@media all and (max-width: 400px) {
+    .hamburger-icon{
+        position: fixed;
+        display: block;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    nav{
+        background: none;
+        border: none;
+    }
+    nav ul{
+        display: none;
+        margin: 50px 0;
+        padding: 10px;
+        line-height: 30px;
+        text-align: start;
+        border: none;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        text-align: start;
+        border: none;
+    }
+    nav a{
+        font-size: 11px;
+        box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.7), 10px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+    a:active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        display: block;
+        position: absolute;
+        left: 0;
+        background-color: #2f3540;
+        width: 50%;
+        height: 100vh;
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
+    }
+    nav ul::before{
+        display: none;
+    }
+    nav ul li:hover .koncerti{
+        position: relative;
+        left: 200px;
+        top: -300px;
+        border: none;
+    }
+    nav ul li .koncerti ul{
+        border: none;
+        height: auto;
+    }
+
+    nav li:hover .događanja{
+        position: absolute;
+        left: 200px;
+        top: -150px;
+        border: none;
+    }
+    nav ul li .događanja ul{
+        border: none;
+        height: auto;
+    }
+    .događanja-ul{
+        cursor: default;
+    }
+}
+
 
 
