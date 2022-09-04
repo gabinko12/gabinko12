@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Inconsolata', monospace;
+    color: white;
 }
 html{
     scroll-behavior: smooth;
@@ -16,7 +17,7 @@ ul{
 .container{
     text-align: center;
     position: relative;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
 }
 nav{
@@ -180,6 +181,7 @@ nav ul li .plus:hover::after{
 section{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -192,6 +194,17 @@ section h1{
     font-size: 55px;
     margin: 30px;
     color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+}
+section h2{
+    font-size: 55px;
+    margin: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
 }
 section p{
     max-width: 400px;
@@ -305,7 +318,7 @@ section p{
         position: absolute;
         left: 0;
         background-color: #2f3540;
-        width: 50%;
+        width: auto;
         height: 100vh;
         box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
     }
@@ -335,6 +348,16 @@ section p{
     }
     .dogadanja-ul{
         cursor: default;
+    }
+    section p{
+        max-width: 400px;
+        word-spacing: 3px;
+        font-size: 13px;
+        background-color: #2f3540;
+        color: white;
+        padding: 20px;
+        max-height: 520px;
+        margin: 30px;
     }
 }
 @media all and (max-width: 400px) {
@@ -379,7 +402,7 @@ section p{
         position: absolute;
         left: 0;
         background-color: #2f3540;
-        width: 50%;
+        width: auto;
         height: 100vh;
         box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
     }
