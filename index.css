@@ -172,7 +172,7 @@ nav ul li .dogadanja-mobile.clicked2{
 nav  li:hover .dogadanja-mobile{
     display: none;
 }
-/* Plus icon 
+/* Plus icon */
 
 nav ul li  .plus{
     display: inline-block;
@@ -188,18 +188,18 @@ nav ul li .plus::after{
     box-sizing: border-box;
     left: 50%;
     top: 50%;
-    background-color: #000000;
+    background-color: white;
     height: 2px;
     width: 100%;
     transform: translate(-50%,-50%);
     transition: all 0.3s ease;
 }
-nav ul li .plus::after{
-    transform: translate(-50%,-50%) rotate(-90deg);
+nav ul li .plus.clicked1{
+    display: none;
 }
-nav ul li .plus:hover::after{
+nav ul li .plus.clicked1::after{
     transform: translate(-50%,-50%) rotate(0deg);
-}*/
+}
 
 /* Section setup */
 section{

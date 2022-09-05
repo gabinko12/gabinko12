@@ -121,11 +121,13 @@
         const koncerti = document.querySelector(".koncerti-mobile")
         const dogadanjaEl = document.getElementById("dogadanja-btn")
         const dogadanja = document.querySelector(".dogadanja-mobile")
+        const plusIcon = document.querySelector(".plus")
         hamburgerIcon.addEventListener("click", function(){
             navbarList.classList.toggle("show");
         })
         koncertiEl.addEventListener("click", function(){
             koncerti.classList.toggle("clicked1")
+            plusIcon.classList.toggle("clicked1")
         })
         dogadanjaEl.addEventListener("click", function(){
             dogadanja.classList.toggle("clicked2")
