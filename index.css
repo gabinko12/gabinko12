@@ -173,32 +173,8 @@ nav  li:hover .dogadanja-mobile{
     display: none;
 }
 /* Plus icon */
-
 nav ul li  .plus{
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    position: relative;
-    margin-left: 5px;
-}
-nav ul li .plus::before,
-nav ul li .plus::after{
-    content: "";
-    position: absolute;
-    box-sizing: border-box;
-    left: 50%;
-    top: 50%;
-    background-color: white;
-    height: 2px;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    transition: all 0.3s ease;
-}
-nav ul li .plus.clicked1{
     display: none;
-}
-nav ul li .plus.clicked1::after{
-    transform: translate(-50%,-50%) rotate(0deg);
 }
 
 /* Section setup */
@@ -422,6 +398,32 @@ nav ul li:hover .koncerti{
     nav  li:hover .dogadanja-mobile{
         transform: translateX(-300px);
     }
+    nav ul li  .plus{
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        position: relative;
+        margin-left: 5px;
+    }
+    nav ul li .plus::before,
+    nav ul li .plus::after{
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        left: 50%;
+        top: 50%;
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s ease;
+    }
+    nav ul li .plus.clicked1{
+        display: none;
+    }
+    nav ul li .plus.clicked1::after{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
 }
 @media all and (max-width: 400px) {
     .hamburger-icon{
@@ -558,5 +560,31 @@ nav ul li:hover .koncerti{
     }
     nav  li:hover .dogadanja-mobile{
         transform: translateX(-300px);
+    }
+    nav ul li  .plus{
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        position: relative;
+        margin-left: 5px;
+    }
+    nav ul li .plus::before,
+    nav ul li .plus::after{
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        left: 50%;
+        top: 50%;
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s ease;
+    }
+    nav ul li .plus.clicked1{
+        display: none;
+    }
+    nav ul li .plus.clicked1::after{
+        transform: translate(-50%,-50%) rotate(0deg);
     }
 }
