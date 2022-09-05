@@ -20,20 +20,36 @@
             <ul>
                 <li><a class="nav_link"  href="#home"><i class="material-icons">home</i>HOME</a></li>
                 <li><a class="nav_link"  href="#povijest">POVIJEST ORKESTRA</a></li>
-                <li><a class="nav_link"  id="koncerti-ul" href="#koncerti">KONCERTI<i class="plus"></i></a>
+                <li><a class="nav_link"  id="koncerti-btn" href="#koncerti">KONCERTI<i class="plus"></i></a>
                     <div class="koncerti">
                         <ul>
-                            <li><a id="link" href="#bozic">BOŽIĆNO NOVOGODIŠNJI</a></li>
-                            <li><a id="link" href="#uskrs">USKRSNI</a></li>
-                            <li><a id="link" href="#nautički">NAUTIČKI</a></li>
+                            <li><a  href="#bozic">BOŽIĆNO NOVOGODIŠNJI</a></li>
+                            <li><a  href="#uskrs">USKRSNI</a></li>
+                            <li><a  href="#nautički">NAUTIČKI</a></li>
                         </ul>
-                    </div></li>
-                <li><a class="nav_link"  href="#događanja" id="dogadanja-ul">DOGAĐANJA</a>
+                    </div>
+                    <div class="koncerti-mobile">
+                        <ul>
+                            <li><a href="#bozic">BOŽIĆNO NOVOGODIŠNJI</a></li>
+                            <li><a href="#uskrs">USKRSNI</a></li>
+                            <li><a href="#nautički">NAUTIČKI</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav_link"  href="#događanja" id="dogadanja-btn">DOGAĐANJA</a>
                     <div class="dogadanja">
                         <ul>
                             <li><a class="nav_link"  href="#flig">FLIG FESTIVAL</a></li>
                         </ul>
-                    </div></li>
+                    </div>
+                    <div class="dogadanja-mobile">
+                        <ul>
+                            <li><a href="#bozic">BOŽIĆNO NOVOGODIŠNJI</a></li>
+                            <li><a href="#uskrs">USKRSNI</a></li>
+                            <li><a href="#nautički">NAUTIČKI</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a class="nav_link"  href="#kontaktiraj-nas">KONTAKTIRAJ NAS</a></li>
                 <li><a class="nav_link"  href="#o-nama">O NAMA</a></li>
             </ul>
@@ -101,8 +117,18 @@
     <script>
         const hamburgerIcon = document.querySelector("#hamburger-icon")
         const navbarList = document.querySelector(".navbar ul")
+        const koncertiEl = document.getElementById("koncerti-btn")
+        const koncerti = document.querySelector(".koncerti-mobile")
+        const dogadanjaEl = document.getElementById("dogadanja-btn")
+        const dogadanja = document.querySelector(".dogadanja-mobile")
         hamburgerIcon.addEventListener("click", function(){
             navbarList.classList.toggle("show");
+        })
+        koncertiEl.addEventListener("click", function(){
+            koncerti.classList.toggle("clicked1")
+        })
+        dogadanjaEl.addEventListener("click", function(){
+            dogadanja.classList.toggle("clicked2")
         })
     </script>
     <script src="change.js"></script>

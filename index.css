@@ -3,7 +3,6 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Inconsolata', monospace;
-    color: white;
 }
 html{
     scroll-behavior: smooth;
@@ -19,6 +18,7 @@ video{
     flex-wrap: wrap;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
+
 
 /* Setting up navbar */
 .container{
@@ -115,7 +115,7 @@ a:active,a:hover{
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
-/* SUBMENUS */
+/* SUBMENUS  for bigger screen*/
 
 nav  li .koncerti{
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
@@ -154,6 +154,24 @@ nav  li:hover .dogadanja{
     visibility: visible;
 }
 
+nav ul li .koncerti-mobile{
+    display: none;
+}
+nav ul li .koncerti-mobile.clicked1{
+    display: none;
+}
+nav  li:hover .koncerti-mobile{
+    display: none;
+}
+nav ul li .dogadanja-mobile{
+    display: none;
+}
+nav ul li .dogadanja-mobile.clicked2{
+    display: none;
+}
+nav  li:hover .dogadanja-mobile{
+    display: none;
+}
 /* Plus icon 
 
 nav ul li  .plus{
@@ -302,7 +320,7 @@ nav ul li:hover .koncerti{
         margin: 50px 0;
         padding: 20px;
         line-height: 30px;
-        text-align: start;
+        text-align: center;
         border: none;
     }
 
@@ -335,32 +353,7 @@ nav ul li:hover .koncerti{
     nav ul::before{
         display: none;
     }
-    nav ul li:hover .koncerti{
-        position: relative;
-        left: 200px;
-        top: -300px;
-        border: none;
-        z-index: 2;
 
-    }
-    nav ul li .koncerti ul{
-        border: none;
-        height: auto;
-    }
-
-    nav li:hover .dogadanja{
-        position: absolute;
-        left: 200px;
-        top: -150px;
-        border: none;
-    }
-    nav ul li .dogadanja ul{
-        border: none;
-        height: auto;
-    }
-    .dogadanja-ul{
-        cursor: default;
-    }
     section p{
         max-width: 400px;
         word-spacing: 3px;
@@ -370,6 +363,64 @@ nav ul li:hover .koncerti{
         padding: 20px;
         max-height: 520px;
         margin: 30px;
+    }
+
+    nav  li .koncerti{
+        display: none;
+    }
+    nav  li:hover .koncerti{
+        display: none;
+    }
+    nav  li .dogadanja{
+        display: none;
+    }
+    nav  li:hover .dogadanja{
+        display: none;
+    }
+
+    nav ul li .koncerti-mobile{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 250px;
+        position: absolute;
+        left: 0;
+        font-size: 13px;
+        transform: translate(-300px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 500ms;
+    }
+    nav ul li .koncerti-mobile.clicked1{
+        transform: translate(150px, -100px);
+        opacity: 1;
+        visibility: visible;
+        height: 200px;
+        width: 200px;
+        display: block;
+    }
+    nav  li:hover .koncerti-mobile{
+        transform: translate(-500px);
+    }
+    nav ul li .dogadanja-mobile{
+        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
+        width: 250px;
+        position: absolute;
+        left: 0;
+        font-size: 13px;
+        transform: translate(-300px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 500ms;
+    }
+    nav ul li .dogadanja-mobile.clicked2{
+        transform: translate(150px, -100px);
+        opacity: 1;
+        visibility: visible;
+        height: 200px;
+        width: 200px;
+        display: block;
+    }
+    nav  li:hover .dogadanja-mobile{
+        transform: translateX(-300px);
     }
 }
 @media all and (max-width: 400px) {
