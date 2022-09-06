@@ -218,29 +218,16 @@ section p{
     margin: 30px;
 }
 .kontakt{
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid black;
-    max-width: 400px;
+    max-width: 320px;
     font-size: 20px;
     background-color: #2f3540;
     color: white;
     padding: 20px;
-    max-height: 520px;
+    max-height: 260px;
     text-align: center;
-}
-.info{
-    border: 2px solid black;
-    max-width: 400px;
-    font-size: 20px;
-    background-color: #2f3540;
-    color: white;
-    padding: 20px;
-    max-height: 520px;
-    text-align: center;
-    margin: 30px;
-}
-.izradio{
-    font-size: 11px;
-    margin: 30px;
 }
 #home{
     background: url(slike/home_img1.jpg) no-repeat center /cover;
@@ -268,6 +255,33 @@ section p{
     background: url(slike/o-nama\ \(1\).webp) no-repeat center /cover;
     z-index: 0;
 }
+/* Footer setup */
+
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background: grey;
+    height: auto;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    margin: 30px;
+}
+.footer-content h3{
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    
+}
 
 /* Media queories */
 @media all and (max-width: 1044px){
@@ -276,6 +290,9 @@ nav ul li:hover .koncerti{
 }
 }
 @media all and (max-width: 600px) {
+    .kontakt{
+        font-size: 17px;
+    }
     video{
         width: 350px;
         height: auto;
@@ -426,6 +443,11 @@ nav ul li:hover .koncerti{
     }
 }
 @media all and (max-width: 400px) {
+    .kontakt{
+        position: relative;
+        font-size: 12px;
+        right: 50px;
+    }
     .hamburger-icon{
         position: fixed;
         display: block;

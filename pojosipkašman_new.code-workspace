@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../web sites/Orkestar Josip Kašman"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pojosipkašman_new"
+	}
+}
