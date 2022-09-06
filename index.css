@@ -263,13 +263,13 @@ section p{
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    background: grey;
+    background: rgb(216, 216, 216);
     height: auto;
 }
 .footer-content{
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color: black;
     justify-content: center;
     align-items: center;
     text-align: center;

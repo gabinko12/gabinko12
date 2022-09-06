@@ -118,19 +118,19 @@
         const hamburgerIcon = document.querySelector("#hamburger-icon")
         const navbarList = document.querySelector(".navbar ul")
         const koncertiEl = document.getElementById("koncerti-btn")
-        const koncerti = document.querySelector(".koncerti-mobile")
+        const koncertiM = document.querySelector(".koncerti-mobile")
         const dogadanjaEl = document.getElementById("dogadanja-btn")
-        const dogadanja = document.querySelector(".dogadanja-mobile")
+        const dogadanjaM = document.querySelector(".dogadanja-mobile")
         const plusIcon = document.querySelector(".plus")
         hamburgerIcon.addEventListener("click", function(){
             navbarList.classList.toggle("show");
         })
         koncertiEl.addEventListener("click", function(){
-            koncerti.classList.toggle("clicked1")
+            koncertiM.classList.toggle("clicked1")
             plusIcon.classList.toggle("clicked1")
         })
         dogadanjaEl.addEventListener("click", function(){
-            dogadanja.classList.toggle("clicked2")
+            dogadanjaM.classList.toggle("clicked2")
         })
     </script>
     <script src="change.js"></script>
