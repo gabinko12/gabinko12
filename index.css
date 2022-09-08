@@ -393,6 +393,14 @@ nav ul li:hover .koncerti{
         width: 200px;
         display: block;
     }
+    nav ul .koncerti-mobile.clicked1 ul{
+        display: block;
+        background: rebeccapurple;
+    }
+    nav ul .koncerti-mobile.clicked1 {
+        box-shadow: none;
+    }
+
     nav  li:hover .koncerti-mobile{
         transform: translate(-500px);
     }
