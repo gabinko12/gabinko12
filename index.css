@@ -94,6 +94,7 @@ a:active,a:hover{
     display: none;
     z-index: 2;
     color: white;
+    border-radius: 10px;
 }
 
 .bar1, .bar2, .bar3 {
