@@ -396,7 +396,7 @@ nav ul li:hover .koncerti{
     }
     nav ul .koncerti-mobile.clicked1 ul{
         display: block;
-        background: rebeccapurple;
+        background: #3498db;
     }
     nav ul .koncerti-mobile.clicked1 {
         box-shadow: none;
@@ -424,34 +424,15 @@ nav ul li:hover .koncerti{
         width: 200px;
         display: block;
     }
+    nav ul .dogadanja-mobile.clicked2 ul{
+        display: block;
+        background: #3498db;
+    }
+    nav ul .dogadanja-mobile.clicked2 {
+        box-shadow: none;
+    }
     nav  li:hover .dogadanja-mobile{
         transform: translateX(-300px);
-    }
-    nav ul li  .plus{
-        display: inline-block;
-        height: 12px;
-        width: 12px;
-        position: relative;
-        margin-left: 5px;
-    }
-    nav ul li .plus::before,
-    nav ul li .plus::after{
-        content: "";
-        position: absolute;
-        box-sizing: border-box;
-        left: 50%;
-        top: 50%;
-        background-color: white;
-        height: 2px;
-        width: 100%;
-        transform: translate(-50%,-50%);
-        transition: all 0.3s ease;
-    }
-    nav ul li .plus.clicked1{
-        display: none;
-    }
-    nav ul li .plus.clicked1::after{
-        transform: translate(-50%,-50%) rotate(0deg);
     }
 }
 @media all and (max-width: 400px) {
@@ -597,32 +578,6 @@ nav ul li:hover .koncerti{
     }
     nav  li:hover .dogadanja-mobile{
         transform: translateX(-300px);
-    }
-    nav ul li  .plus{
-        display: inline-block;
-        height: 12px;
-        width: 12px;
-        position: relative;
-        margin-left: 5px;
-    }
-    nav ul li .plus::before,
-    nav ul li .plus::after{
-        content: "";
-        position: absolute;
-        box-sizing: border-box;
-        left: 50%;
-        top: 50%;
-        background-color: white;
-        height: 2px;
-        width: 100%;
-        transform: translate(-50%,-50%);
-        transition: all 0.3s ease;
-    }
-    nav ul li .plus.clicked1{
-        display: none;
-    }
-    nav ul li .plus.clicked1::after{
-        transform: translate(-50%,-50%) rotate(0deg);
     }
     .kontakt{
         position: relative;

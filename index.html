@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>PO JOSIP KAŠMAN</title>
+    <title>Puhački orkestar Josip Kašman</title>
 </head>
 <body>
     <div class="container">
@@ -20,7 +20,7 @@
             <ul>
                 <li><a class="nav_link"  href="#home"><i class="material-icons">home</i>HOME</a></li>
                 <li><a class="nav_link"  href="#povijest">POVIJEST ORKESTRA</a></li>
-                <li><a class="nav_link"  id="koncerti-btn" href="#koncerti">KONCERTI<i class="plus"></i></a>
+                <li><a class="nav_link"  id="koncerti-btn" href="#koncerti">KONCERTI</a>
                     <div class="koncerti">
                         <ul>
                             <li><a  href="#bozic">BOŽIĆNO NOVOGODIŠNJI</a></li>
@@ -53,7 +53,7 @@
         </nav>
         <section id="home">
             <h1>HOME</h1>
-            <p>Na ovoj web stranici možete pogledati zanimljivosti o puhačkom orkestru josip kašman</p>
+            <p>Na ovoj web stranici možete pogledati zanimljivosti o puhačkom orkestru Josip Kašman</p>
         </section>
         <section id="povijest">
             <h2>Povijest</h2>
@@ -61,7 +61,7 @@
         </section>
         <section id="bozic">
             <h2>BOŽIĆNO NOVOGODIŠNJI</h2>
-            <p>PO Josip Kašman tradicionalno održava Božićno novogodišnji koncert u kino sali Malog Lošinja u Adventsko vrijeme. Koncert je humanitarnog karaktera, a zbog dobre posjećenosti održava se u više večeri zaredom. Uz neizostavne pjesme Božićnog karaktera orkestar svira razne obrade popularne i filmske glazbe te klasike. Neke izvedbe možete poslušati ovdje.</p>
+            <p>Puhački orkestar Josip Kašman tradicionalno održava Božićno novogodišnji koncert u kino sali Malog Lošinja u Adventsko vrijeme. Koncert je humanitarnog karaktera, a zbog dobre posjećenosti održava se u više večeri zaredom. Uz neizostavne pjesme Božićnog karaktera orkestar svira razne obrade popularne i filmske glazbe te klasike. Neke izvedbe možete poslušati ovdje.</p>
             <video controls  loop  src="videa/Božićno - novogodišnji koncert crop.mp4"></video>
         </section>
         <section id="uskrs">
@@ -75,7 +75,7 @@
         </section>
         <section id="flig">
             <h2>FLIG FESTIVAL</h2>
-            <p>PO Josip Kašman od 9. - 11. rujna 2022 sudjeluje na Međunarodnom susretu limenih glazbi u Daruvaru.</p>
+            <p>Puhački orkestar Josip Kašman od 9. - 11. rujna 2022 sudjeluje na Međunarodnom susretu limenih glazbi u Daruvaru.</p>
         </section>
         <section id="kontaktiraj-nas">
             <h2>KONTAKTIRAJ NAS</h2>
@@ -121,16 +121,16 @@
         const koncertiM = document.querySelector(".koncerti-mobile")
         const dogadanjaEl = document.getElementById("dogadanja-btn")
         const dogadanjaM = document.querySelector(".dogadanja-mobile")
-        const plusIcon = document.querySelector(".plus")
         hamburgerIcon.addEventListener("click", function(){
             navbarList.classList.toggle("show");
         })
         koncertiEl.addEventListener("click", function(){
             koncertiM.classList.toggle("clicked1")
-            plusIcon.classList.toggle("clicked1")
+            dogadanjaM.classList.remove("clicked2")
         })
         dogadanjaEl.addEventListener("click", function(){
             dogadanjaM.classList.toggle("clicked2")
+            koncertiM.classList.remove("clicked1")
         })
     </script>
     <script src="change.js"></script>
