@@ -24,7 +24,7 @@ video{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     left: 400px;
 }
-.songsBozic{
+.songs{
     position: relative;
     display: flex;
     flex: wrap;
@@ -34,25 +34,58 @@ video{
     background-color: #2f3540;
     max-width: 520px;
     height: 200px;
-    bottom: 400px;
-    left: 390px;
+    top: 100px;
+    left: -5px;
 }
-.songsBozic::before{
+.songs::before{
     content: "MORE COMPOSITIONS";
     position: absolute;
     top: 20px;
-    color: white;
+    color: #fff;
+    font-size: 20px;
 }
 .songLink{
     position: relative;
     top: 0;
-    border-radius: 50px;
     padding: 5px;
+    margin: 10px;
 }
 .songLink:hover{
-    background-color: #3498db;
+    border: none;
+    color: #3498db;
 }
-
+.buttonShow{
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    flex: wrap;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: none;
+}
+.buttonShow:hover{
+    background-color: #2f3540;
+}
+.buttonRemove{
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    flex: wrap;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: none;
+}
+.buttonRemove:hover{
+    background-color: #2f3540;
+}
 /* Setting up navbar */
 .container{
     text-align: center;
@@ -326,146 +359,48 @@ section p{
 }
 
 /* Media queories */
-@media all and (max-width: 1038px) {
-    .kontakt{
-        font-size: 17px;
+@media all and (max-width: 1242px) {
+    /* More compositions */
+    .buttonShow{
+        display: flex;
+        margin: 50px;
+        top: 50px;
+    }
+    .buttonRemove{
+        top: 120px;
+    }
+    .songs{
+        display: none;
+    }
+    .active{
+        display: flex;
+    }
+    .active2{
+        display: flex;
+    }
+    .remove{
+        display: none;
+    }
+    /* Section fix */
+    #bozic h2{
+        position: relative;
+        left: 0;
+    }
+    #bozic p{
+        position: relative;
+        left: 0;
+    }
+    #uskrs  h2{
+        position: relative;
+        left: 0;
+    }
+    #uskrs p{
+        position: relative;
+        left: 0;
     }
     video{
-        width: 350px;
-        height: auto;
-    }
-    .hamburger-icon{
-        position: fixed;
-        display: block;
-        top: 10px;
-        left: 10px;
-        cursor: pointer;
-    }
-    nav{
-        background: none;
-        border: none;
-    }
-    nav ul{
-        display: none;
-        margin: 50px 0;
-        padding: 20px;
-        line-height: 30px;
-        text-align: center;
-        border: none;
-    }
-
-    nav li{
-        display: block;
-        margin: 40px 0;
-        line-height: 30px;
-        text-align: start;
-        border: none;
-    }
-    nav a{
-        font-size: 15px;
-        box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.7), 10px 10px 15px rgba(0, 0, 0, 0.5);
-    }
-    a:active,a:hover{
-        border: none;
-        color: #3498db;
-    }
-    nav ul.show{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: absolute;
         left: 0;
-        background-color: #2f3540;
-        width: auto;
-        height: 100vh;
-        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
-    }
-    nav ul::before{
-        display: none;
-    }
-
-    section p{
-        max-width: 400px;
-        word-spacing: 3px;
-        font-size: 17px;
-        background-color: #2f3540;
-        color: white;
-        padding: 20px;
-        max-height: 520px;
-        margin: 30px;
-    }
-
-    nav  li .koncerti{
-        display: none;
-    }
-    nav  li:hover .koncerti{
-        display: none;
-    }
-    nav  li .dogadanja{
-        display: none;
-    }
-    nav  li:hover .dogadanja{
-        display: none;
-    }
-
-    nav ul li .koncerti-mobile{
-        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
-        width: 250px;
-        position: absolute;
-        left: 0;
-        font-size: 13px;
-        transform: translate(-300px);
-        opacity: 0;
-        visibility: hidden;
-        transition: 500ms;
-    }
-    nav ul li .koncerti-mobile.clicked1{
-        transform: translate(150px, -100px);
-        opacity: 1;
-        visibility: visible;
-        height: 200px;
-        width: 200px;
-        display: block;
-    }
-    nav ul .koncerti-mobile.clicked1 ul{
-        display: block;
-        background: #3498db;
-    }
-    nav ul .koncerti-mobile.clicked1 {
-        box-shadow: none;
-    }
-
-    nav  li:hover .koncerti-mobile{
-        transform: translate(-500px);
-    }
-    nav ul li .dogadanja-mobile{
-        box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.7);
-        width: 250px;
-        position: absolute;
-        left: 0;
-        font-size: 13px;
-        transform: translate(-300px);
-        opacity: 0;
-        visibility: hidden;
-        transition: 500ms;
-    }
-    nav ul li .dogadanja-mobile.clicked2{
-        transform: translate(150px, -100px);
-        opacity: 1;
-        visibility: visible;
-        height: 200px;
-        width: 200px;
-        display: block;
-    }
-    nav ul .dogadanja-mobile.clicked2 ul{
-        display: block;
-        background: #3498db;
-    }
-    nav ul .dogadanja-mobile.clicked2 {
-        box-shadow: none;
-    }
-    nav  li:hover .dogadanja-mobile{
-        transform: translateX(-300px);
+        top: 80px;
     }
 }
 @media all and (max-width: 646px) {
