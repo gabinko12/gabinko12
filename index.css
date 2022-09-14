@@ -37,6 +37,9 @@ video{
     bottom: 400px;
     left: 400px;
 }
+.songs ul li{
+    width: 150px;
+}
 .songs::before{
     content: "MORE COMPOSITIONS";
     position: absolute;
