@@ -34,8 +34,8 @@ video{
     background-color: #2f3540;
     max-width: 520px;
     height: 200px;
-    top: 100px;
-    left: -5px;
+    bottom: 400px;
+    left: 400px;
 }
 .songs::before{
     content: "MORE COMPOSITIONS";
@@ -401,6 +401,10 @@ section p{
     video{
         left: 0;
         top: 80px;
+    }
+    .songs{
+        top: 100px;
+        left: -5px;
     }
 }
 @media all and (max-width: 646px) {
