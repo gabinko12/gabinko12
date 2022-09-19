@@ -382,6 +382,25 @@ section p{
 #flig{
     background: url(slike/flig1.webp) no-repeat center /cover;
 }
+#flig p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+.flig-images{
+    display: none;
+    background-color: #3498db;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    height: 30px;
+}
+.imagesActive{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 #kontaktiraj-nas{
     background: url(slike/instrument1.png) no-repeat center /cover;
 }
@@ -457,6 +476,9 @@ section p{
         display: none;
     }
     /* Section fix */
+    .flig-images{
+        display: inline-block;
+    }
     #bozic h2{
         position: relative;
         left: 0;
