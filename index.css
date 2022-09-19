@@ -55,13 +55,13 @@ video{
     justify-content: center;
     text-align: center;
     background-color: #2f3540;
-    width: 520px;
+    width: 600px;
     height: 200px;
     bottom: 400px;
     left: 400px;
 }
 .uskrsS ul li{
-    width: 150px;
+    width: 160px;
 }
 .uskrsS::before{
     content: "MORE COMPOSITIONS";
@@ -419,23 +419,23 @@ section p{
 /* Media queories */
 
 /* Width*/
-@media all and (max-width: 1242px) {
+@media all and (max-width: 1410px) {
     /* More compositions */
     .buttonShow{
         display: flex;
         margin: 50px;
-        top: 50px;
+        top: -10px;
     }
     .buttonRemove{
-        top: 160px;
+        top: 190px;
     }
     .buttonShowUskrs{
         display: flex;
         margin: 50px;
-        top: 50px;
+        top: 0px;
     }
     .buttonRemoveUskrs{
-        top: 160px;
+        top: 190px;
     }
     .songs{
         display: none;
@@ -446,8 +446,8 @@ section p{
     .active{
         position: absolute;
         display: flex;
-        left: 4%;
-        bottom: 200px;
+        left: 28.5%;
+        bottom: 250px;
         width: 600px;
     }
     .active2{
@@ -481,8 +481,25 @@ section p{
         left: 0;
         top: 0;
     }
+    section h2{
+        font-size: 45px;
+    }
 }
-@media all and (max-width: 646px) {
+@media all and (max-width: 985px){
+    .active{
+        position: absolute;
+        display: flex;
+        left: 20%;
+        bottom: 250px;
+        width: 600px;
+    }
+}
+@media all and (max-width: 766px) {
+    .active{
+        left: 9%;
+    }
+}
+@media all and (max-width: 677px) {
 /* More compositions */
 .buttonShowUskrs{
             display: flex;
@@ -490,12 +507,12 @@ section p{
             top: 0px;
 }
 .buttonRemoveUskrs{
-    top: 170px;
+    top: 240px;
 }
 .buttonShow{
             display: flex;
             margin: 50px;
-            top: 50px;
+            top: 0px;
 }
 .buttonRemove{
         top: 120px;
@@ -509,7 +526,7 @@ section p{
 .active{
         position: absolute;
         display: flex;
-        left: 0;
+        left: 4%;
         bottom: 200px;
 }
 .active2{
@@ -569,6 +586,7 @@ video{
         display: block;
         text-align: start;
         border: none;
+        margin: 17px;
     }
     nav a{
         font-size: 14px;
@@ -708,7 +726,7 @@ video{
         max-width: 300px;
     }
 }
-@media all and (max-width: 460px) {
+@media all and (max-width: 639px) {
                 /* More compositions */
                 .buttonShowUskrs{
                     display: flex;
@@ -716,7 +734,7 @@ video{
                     top: 0px;
                 }
                 .buttonRemoveUskrs{
-                    top: 170px;
+                    top: 240px;
                 }
                 .buttonShow{
                     display: flex;
@@ -917,8 +935,82 @@ video{
         left: -40px;
     }
 }
+@media all and (max-width: 617px) {
+    .buttonRemove{
+        top: 0;
+    }
+    .songsWrapper{
+        background-color: transparent;
+    }
+    .uskrsS{
+        left: 0;
+        bottom: 170px;
+    }
+    .uskrsS ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        width: 80px;
+        line-height: 30px;
+    }
+    .active{
+        width: 400px;
+        height: 300px;
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+@media all and (max-width: 438px){
+    .buttonRemove{
+        top: 0;
+    }
+    .uskrsS ul{
+        margin: 30px;
+        width: 150px;
+    }
+    .active{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        left: 40px;
+        bottom: 170px;
+        width: 270px;
+        height: 600px;
+        font-size: 18px;
+        margin: 0px;
+        line-height: 20px;
+    }
+    #bozic h2{
+        left: -20px;
+    }
+    #bozic p{
+        left: -30px;
+    }
+    .buttonRemove{
+        left: -10px;
+    }
+    .buttonShow{
+        left: 110px;
+    }
+    #uskrs h2{
+        left: -20px;
+    }
+    #uskrs p{
+        left: -30px;
+    }
+    .buttonRemoveUskrs{
+        left: -10px;
+    }
+    .buttonShowUskrs{
+        left: -10px;
+    }
+    video{
+        left: -28px;
+    }
+} 
 /* Height */
-@media all and (max-height: 780px){
+@media all and (max-height: 835px){
     section h1{
         position: relative;
         bottom: 50px;
@@ -926,12 +1018,13 @@ video{
     section h2{
         position: relative;
         font-size: 30px;
-        top: -60px;
+        top: -50px;
     }
     section p{
         position: relative;
         top: -50px;
         margin: 5px;
+        left: 0;
     }
     .songs ul{
         width: 80px;
@@ -941,5 +1034,12 @@ video{
     .buttonShow{
         position: relative;
         top: 10px;
+        left: -20px;
+    }
+    .active{
+        height: 400px;
+    }
+    .uskrsS ul{
+        margin: 10px;
     }
 }
