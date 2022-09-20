@@ -387,26 +387,6 @@ section p{
     flex-wrap: wrap;
     max-width: 300px;
 }
-.showImagesFlig{
-    display: none;
-    border: 1px solid white;
-    border-radius: 20px;
-    color: white;
-    background-color: #3498db;
-    font-size: 18px;
-    padding: 5px;
-    cursor: pointer;
-}
-.removeImagesFlig{
-    display: none;
-    border: 1px solid white;
-    border-radius: 20px;
-    color: white;
-    background-color: #3498db;
-    font-size: 18px;
-    padding: 5px;
-    cursor: pointer;
-}
 .imagesWrapper{
     display: flex;
     flex-wrap: wrap;
