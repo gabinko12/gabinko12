@@ -387,19 +387,37 @@ section p{
     flex-wrap: wrap;
     max-width: 300px;
 }
-.flig-images{
+.showImagesFlig{
     display: none;
-    background-color: #3498db;
-    color: white;
     border: 1px solid white;
     border-radius: 20px;
+    color: white;
+    background-color: #3498db;
     font-size: 18px;
-    height: 30px;
+    padding: 5px;
+    cursor: pointer;
 }
-.imagesActive{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+.removeImagesFlig{
+    display: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: #3498db;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+.imagesWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imagesWrapper img{
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 500px;
+    margin: 10px 20px;
 }
 #kontaktiraj-nas{
     background: url(slike/instrument1.png) no-repeat center /cover;
@@ -476,9 +494,6 @@ section p{
         display: none;
     }
     /* Section fix */
-    .flig-images{
-        display: inline-block;
-    }
     #bozic h2{
         position: relative;
         left: 0;
@@ -517,10 +532,15 @@ section p{
     }
 }
 @media all and (max-width: 766px) {
+    .imagesWrapper img{
+        max-width: 250px;
+        max-height: 350px;
+    }
     .active{
         left: 9%;
     }
 }
+
 @media all and (max-width: 677px) {
 /* More compositions */
 .buttonShowUskrs{
@@ -981,6 +1001,11 @@ video{
         font-size: 20px;
         margin: 20px;
     }
+    .imagesWrapper img{
+        max-width: 200px;
+        max-height: 300px;
+        margin: 4px;
+    }
 }
 @media all and (max-width: 438px){
     .buttonRemove{
@@ -1030,7 +1055,18 @@ video{
     video{
         left: -28px;
     }
+    .imagesWrapper img{
+        max-width: 170px;
+        max-height: 250px;
+    }
 } 
+@media all and (max-width: 377px){
+    .imagesWrapper img{
+        max-width: 150px;
+        max-height: 250px;
+        margin: 1px;
+    }
+}
 /* Height */
 @media all and (max-height: 835px){
     section h1{
