@@ -1042,7 +1042,7 @@ video{
         max-width: 150px;
         max-height: 250px;
         margin: 1px;
-    }
+}
 }
 /* Height */
 @media all and (max-height: 835px){
@@ -1078,18 +1078,18 @@ video{
         margin: 10px;
     }
     #bozic h2{
-        left: -1px;
+        left: -10px;
     }
     #bozic p{
-        left: -5px;
+        left: -15px;
     }
     #uskrs h2{
-        left: -1px;
+        left: -10px;
     }
     #uskrs p{
-        left: -5px;
+        left: -15px;
     }
     video{
-        left: -1px;
+        left: -10px;
     }
 }
