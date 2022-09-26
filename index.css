@@ -1077,4 +1077,19 @@ video{
     .uskrsS ul{
         margin: 10px;
     }
+    #bozic h2{
+        left: -1px;
+    }
+    #bozic p{
+        left: -5px;
+    }
+    #uskrs h2{
+        left: -1px;
+    }
+    #uskrs p{
+        left: -5px;
+    }
+    video{
+        left: -1px;
+    }
 }
